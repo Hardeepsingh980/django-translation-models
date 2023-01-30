@@ -6,7 +6,7 @@ from django.conf import settings
 class BlogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
-        fields = ['id', 'title', 'content', 'created_at', 'updated_at']
+        fields = ['title', 'content']
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
